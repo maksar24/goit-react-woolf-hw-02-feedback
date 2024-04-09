@@ -1,4 +1,4 @@
-import MarksButton from 'components/Button/Button';
+import Button from 'components/Button/Button';
 import { List } from './FeedbackOptions.styles';
 import { toUpperFirstLetter } from 'commonJs/commonJs';
 
@@ -8,13 +8,13 @@ const FeedbackOptions = ({ options, onLeaveFeedback }) => {
       {options.map(option => {
         return (
           <li key={option}>
-            <MarksButton
+            <Button
               action={() => {
                 onLeaveFeedback(option);
               }}
             >
               {toUpperFirstLetter(option)}
-            </MarksButton>
+            </Button>
           </li>
         );
       })}

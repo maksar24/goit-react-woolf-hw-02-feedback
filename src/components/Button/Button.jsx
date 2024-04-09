@@ -1,7 +1,7 @@
-import { Button } from './Button.styles';
+import { CustomButton } from './Button.styles';
 
-const MarksButton = ({ children, action }) => {
-  return <Button onClick={action}>{children}</Button>;
+const Button = ({ children, action }) => {
+  return <CustomButton onClick={action}>{children}</CustomButton>;
 };
 
-export default MarksButton;
+export default Button;

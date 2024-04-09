@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Button = styled.button`
+export const CustomButton = styled.button`
   appearance: none;
   background-color: #2ea44f;
   border: 1px solid rgba(27, 31, 35, 0.15);
@@ -16,13 +16,7 @@ export const Button = styled.button`
   font-weight: 600;
   line-height: 20px;
   padding: 6px 16px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
+  transition: 0.5s ease;
   &:focus:not(:focus-visible):not(.focus-visible) {
     box-shadow: none;
     outline: none;
